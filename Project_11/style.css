@@ -1,0 +1,536 @@
+    /*GENERAL PAGE STYLING*/
+    body {
+    font-family: 'Work Sans', sans-serif;
+    background-color: rgb(175, 226, 255);
+    }
+    /*END OF GENERAL PAGE STYLING*/
+    
+    /*HEADER STYLING*/
+    /*HR LINE STYLING*/
+    hr {
+    border: 3px solid rgb(254, 254, 140);
+    width: 100%;
+    margin-bottom: 30px;
+    }
+    /*END OF HEADER STYLING*/
+    
+    /*NEW POST FORM STYLING*/
+    /*POSTS CONTAINER STYLING*/
+    .posts {
+    width: 500px;
+    background-color: whitesmoke;
+    border-radius: 6px;
+    box-shadow: 0 2px 6px -2px black;
+    margin-top: 25px;
+    margin-left: 75px;
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-bottom: 10px;
+    padding-right: 10px;
+    }
+    /*DELETE POST BUTTON STYLING*/
+    .deletepost{
+    margin-top: 10px;
+    height: 20px;
+    font-size: 10px;
+    width: 60px;
+    background-color: rgb(81, 121, 223);
+    color: whitesmoke;
+    border: 1px solid #cfd4d8;
+    margin-left: 25px;
+    }
+    /*DELETE POST BUTTON HOVER STYLING*/
+    .deletepost:hover {
+    background-color: rgb(210, 75, 75);
+    color: white;
+    box-shadow: 0 10px 15px 0 black;
+    outline: none;
+    }
+    /*EDIT POST BUTTON STYLING*/
+    .messageuser{
+    margin-top: 10px;
+    height: 20px;
+    font-size: 10px;
+    width: 80px;
+    background-color: rgb(81, 121, 223);
+    color: whitesmoke;
+    border: 1px solid #cfd4d8;
+    margin-left: 400px;
+    }
+    /*EDIT POST BUTTON HOVER STYLING*/
+    .messageuser:hover {
+    background-color: rgb(210, 75, 75);
+    color: white;
+    box-shadow: 0 10px 15px 0 black;
+    outline: none;
+    }
+    /*AUTHORS POST STYLING*/
+    #authors {
+    text-transform: capitalize;
+    font-size: 16px;
+    }
+    /*TITLES POST STYLING*/
+    #titles{
+    text-transform: capitalize;
+    font-size: 24px;
+    }
+    /*DESCRIPTION POST STYLING*/
+    #descriptions{
+    text-transform: capitalize;
+    font-size: 18px;
+    }
+    /*PRICES POST STYLING*/
+    #prices{
+    font-size: 16px;
+    }
+    /*LOCATION POST STYLING*/
+    #locations{
+    font-size: 12px;
+    }
+    
+    /*DELIVERY POST STYLING*/
+    #deliveries{
+    font-size: 12px;
+    }
+    /*END OF NEW POST STYLING*/
+    
+    /*DRAWER STYLING*/
+    .right-drawer {
+    position:absolute;
+    top:350px;
+    right:0;
+    transition: width 0.5s ease, background 0.5s ease;
+    width: 350px;
+    background: rgb(10, 101, 45);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    cursor: pointer;
+    padding-bottom: 50px;
+    padding-top: 20px;
+    color:snow;
+    right: 0;
+    }
+    /*DRAWER HOVER STYLING*/
+    .right-drawer:hover {
+    width: 400px;
+    background: rgb(210, 75, 75);
+    }
+    /*AUTHOR INPUT STYLING*/
+    #title{
+    height: 25px;
+    width: 200px; 
+    border: 2px solid rgb(175, 226, 255);
+    background-color: snow;
+    font-family: 'Work Sans', sans-serif;
+    margin-left: 55px;
+    margin-top: 15px;
+    }
+    /*DESCRIPTION INPUT STYLING*/
+    #description{
+    height: 300px;
+    width: 200px;
+    border: 2px solid rgb(175, 226, 255);
+    background-color: snow;
+    font-family: 'Work Sans', sans-serif;
+    margin-right: 30px;
+    }
+    /*LOCATION INPUT STYLING*/
+    #location {
+    height: 25px;
+    width: 200px;
+    border: 2px solid rgb(175, 226, 255);
+    background-color: snow;
+    font-family: 'Work Sans', sans-serif;
+    margin-left: 24px;
+    }
+    /*PRICE INPUT STYLING*/
+    #price {
+    height: 25px;
+    width: 200px;
+    border: 2px solid rgb(175, 226, 255);
+    background-color: snow;
+    font-family: 'Work Sans', sans-serif;
+    margin-left: 52px;
+    }
+    /*DELIVERY INPUT STYLING*/
+    #deliverylabel {
+    padding-left: 75px;
+    }
+    /*LOCATION RADIO STYLING*/
+    #yes {
+    padding-left: 80px;
+    }
+    /*SUBMIT POST BUTTON STYLING*/
+    #submitbutton{
+    height: 30px;
+    width: 100px;
+    background-color: snow;
+    color: #3a3a3a;
+    border: 1px solid #cfd4d8;
+    margin-left:75px;
+    margin-top:20px;
+    }
+    /*SUBMIT POST BUTTON HOVER STYLING*/
+    #submitbutton:hover {
+    background-color: rgb(81, 121, 223);
+    color: white;
+    box-shadow: 0 10px 15px 0 black;
+    outline: none;
+    text-transform: uppercase;
+    }
+    /*END OF NEW POST FORM STYLING*/
+
+    /*SEARCH BOX & BUTTON STYLING*/
+    /*SEARCH BOX STYLING*/
+    .searchBox {
+    height: 25px;
+    width: 175px;
+    border: 2px solid rgb(254, 254, 140);
+    position:absolute;
+    top:212px;
+    left: 10px;
+    }
+    /*SEARCH BUTTON STYLING*/
+    #search {
+    height: 32px;
+    width: 75px;
+    background-color: snow;
+    color: #3a3a3a;
+    border: 1px solid #cfd4d8;
+    position:absolute;
+    top:212px;
+    left: 195px;
+    }
+    /*SEARCH BUTTON HOBER STYLING*/
+    #search:hover {
+    background-color: rgb(81, 121, 223);
+    color: white;
+    box-shadow: 0 10px 15px 0 black;
+    outline: none;
+    }
+    /*END OF SEARCH BOX STYLING*/
+    
+    /*FOOTER LOG IN STYLING*/
+    /*LOG IN FORM STYLING*/
+    #login {
+    float: right;
+    width: auto;
+    height: 100px;
+    margin-left: 25px;
+    }
+    /*USERNAME INPUT STYLING*/
+    #uname {
+    height: 25px;
+    width: 150px;
+    border: 2px solid rgb(254, 254, 140);
+    background-color: snow;
+    font-family: 'Work Sans', sans-serif;
+    }
+    /*PASSWORD INPUT STYLING*/
+    #psw {
+    height: 25px;
+    width: 150px;
+    border: 2px solid rgb(254, 254, 140);
+    background-color: snow;
+    font-family: 'Work Sans', sans-serif;
+    }
+    /*LOGIN BUTTON STYLING*/
+    #loginbutton{
+    height: 30px;
+    width: 100px;
+    background-color: snow;
+    color: #3a3a3a;
+    border: 1px solid #cfd4d8;
+    margin-left: 25px;
+    }
+    /*LOGIN BUTTON HOVER STYLING*/
+    #loginbutton:hover {
+    background-color: rgb(254, 254, 140);
+    color: black;
+    box-shadow: 0 10px 15px 0 black;
+    outline: none;
+    }
+    /*REGISTER BUTTON STYLING*/
+    #registerbutton{
+    height: 30px;
+    width: 100px;
+    background-color: snow;
+    color: #3a3a3a;
+    border: 1px solid #cfd4d8;
+    margin-left: 25px;
+    }
+    /*REGISTER BUTTON HOVER STYLING*/
+    #registerbutton:hover {
+    background-color: rgb(254, 254, 140);
+    color: black;
+    box-shadow: 0 10px 15px 0 black;
+    outline: none;
+    }
+    /*END OF FOOTER LOGIN FORM STYLING*/
+    
+    /*MODAL STYLING*/
+    /*CLOSED MODAL*/
+    .modal:not(.open) {
+    display: none;
+    }
+    /*OPEN MODAL*/
+    .modal.open {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    backdrop-filter: blur(6px);
+    }
+    /*MODAL CONTENT STYLING*/
+    .modal .content {
+    width: 480px;
+    padding: 12px;
+    min-height: 200px;
+    background: white;
+    box-shadow: 0 2px 12px -8px black;
+    }
+    /*MODAL HEADING STYLING*/
+    .modal h3 {
+    font-size: 24px;
+    margin-bottom: 6px;
+    padding-bottom: 6px;
+    border-bottom: 1px solid #888;
+    }
+    /*MODAL FORM STYLING*/
+    .modal form {
+    display: flex;
+    flex-direction: column;
+    }
+    /*MODAL LABEL STYLING*/
+    .modal label {
+    margin: 12px 0 4px;
+    }
+    /*MODAL INPUT STYLING*/
+    .modal input, 
+    .modal textarea {
+    background: rgb(225, 255, 255);
+    padding: 8px;
+    font-size: 22px;
+    }
+    /*MODAL BORDER STYLING*/
+    .modal input:invalid:required {
+    border-bottom: 3px solid rgb(254, 254, 140);
+    background: rgb(7, 34, 157);
+    }
+    /*MODAL INPUT DISPLAY*/
+    .modal input:valid:required + h5 {
+    display: none;
+    }
+    /*SUBMIT USER BUTTON STYLING*/
+    .submituser{
+    height: 30px;
+    width: 100px;
+    background-color: snow;
+    color: #3a3a3a;
+    border: 1px solid #cfd4d8;
+    margin-left: 25px;
+    }
+    /*SUBMIT USER BUTTON HOVER STYLING*/
+    .submituser:hover {
+    background-color: rgb(254, 254, 140);
+    color: black;
+    box-shadow: 0 10px 15px 0 black;
+    outline: none;
+    }
+    /*CANCEL BUTTON STYLING*/
+    .canceluser{
+    height: 30px;
+    width: 100px;
+    background-color: snow;
+    color: #3a3a3a;
+    border: 1px solid #cfd4d8;
+    margin-left: 25px;
+    }
+    /*CANCEL BUTTON HOVER STYLING*/
+    .canceluser:hover {
+    background-color: rgb(254, 254, 140);
+    color: black;
+    box-shadow: 0 10px 15px 0 black;
+    outline: none;
+    }
+    /*END OF MODAL STYLING*/
+    
+    /*LOGOUT BUTTON STYLING*/
+    .logout {
+    height: 30px;
+    width: 100px;
+    background-color: snow;
+    color: #3a3a3a;
+    border: 1px solid #cfd4d8;
+    margin-left: 25px;
+    }
+    /*CANCEL BUTTON HOVER STYLING*/
+    .logout:hover {
+    background-color: rgb(254, 254, 140);
+    color: black;
+    box-shadow: 0 10px 15px 0 black;
+    outline: none;
+    }
+    /*BUTTON DIV POSITION STYLING*/
+    .logout.open{
+    position:absolute;
+    top:1100px;
+    right:0;
+    }
+    /*HIDE LOGOUT BUTTON*/
+    .logout:not(.open){
+    display: none;
+    }
+
+    /*MESSAGE CENTER STYLING*/
+    /*MESSAGE BUTTON STYLING*/
+    .messages {
+    height: 30px;
+    width: 100px;
+    background-color: snow;
+    color: #3a3a3a;
+    border: 1px solid #cfd4d8;
+    margin-left: 25px;
+    }
+    /*CANCEL BUTTON HOVER STYLING*/
+    .messages:hover {
+    background-color: rgb(254, 254, 140);
+    color: black;
+    box-shadow: 0 10px 15px 0 black;
+    outline: none;
+    }
+    /*BUTTON DIV POSITION STYLING*/
+    .messages.open{
+    position:absolute;
+    top:1100px;
+    right:120px;
+    }
+    /*HIDE MESSAGE BUTTON*/
+    .messages:not(.open){
+    display: none;
+    }
+    /*MESSAGE CLOSE MODAL*/
+   .closemessages{
+    height: 30px;
+    width: 100px;
+    background-color: snow;
+    color: #3a3a3a;
+    border: 1px solid #cfd4d8;
+    margin-left: 25px; 
+   }
+   .closemessages:hover {
+    background-color: rgb(254, 254, 140);
+    color: black;
+    box-shadow: 0 10px 15px 0 black;
+    outline: none;
+    }
+    /*CLOSED MODAL*/
+    .messagesmodal:not(.open) {
+    display: none;
+    }
+    /*OPEN MODAL*/
+    .messagesmodal.open {
+    position: fixed;
+    z-index: 9999;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    backdrop-filter: blur(6px);
+    }
+    /*MODAL HEADING STYLING*/
+    .messagesmodal h3 {
+    font-size: 24px;
+    margin-bottom: 6px;
+    padding-bottom: 6px;
+    border-bottom: 1px solid #888;
+    }
+    /*MODAL FORM STYLING*/
+    #messagesdiv {
+    display: flex;
+    flex-direction: column;
+    }
+    /*MESSAGE CLOSE MODAL BUTTON*/
+   .closemessages{
+    height: 30px;
+    width: 100px;
+    background-color: snow;
+    color: #3a3a3a;
+    border: 1px solid #cfd4d8;
+    margin-left: 25px; 
+   }
+   /*MESSAGE CLOSE HOVER BUTTON*/
+   .closemessages:hover {
+    background-color: rgb(254, 254, 140);
+    color: black;
+    box-shadow: 0 10px 15px 0 black;
+    outline: none;
+    }
+    /*END OF MESSAGE CENTER STYLING*/
+
+    /*NEW MESSAGE STYLING*/
+    /*CLOSED MODAL*/
+    .newmessagesmodal:not(.open) {
+    display: none;
+    }
+    /*OPEN MODAL*/
+    .newmessagesmodal.open {
+    position: fixed;
+    z-index: 9999;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    backdrop-filter: blur(6px);
+    }
+    /*MODAL HEADING STYLING*/
+    .newmessagesmodal h3 {
+    font-size: 24px;
+    margin-bottom: 6px;
+    padding-bottom: 6px;
+    border-bottom: 1px solid #888;
+    }
+    /*SUBMIT NEW MESSAGE BUTTON*/
+    .submitmessage{
+    height: 30px;
+    width: 100px;
+    background-color: snow;
+    color: #3a3a3a;
+    border: 1px solid #cfd4d8;
+    margin-top: 10px;
+    }
+    /*SUBMIT NEW MESSAGE HOVER*/
+    .submitmessage:hover{
+    background-color: rgb(254, 254, 140);
+    color: black;
+    box-shadow: 0 10px 15px 0 black;
+    outline: none;  
+    }
+    /*NEW MESSAGE FORM*/
+    #newmessage{
+        width: 300px;
+        height: 400px;
+    }
+    .mesage{
+        width: 300px;
+        height: 400px;
+        background-color: snow;
+    }
+    #messages{
+        background-color: whitesmoke;
+        color: #3a3a3a;
+    border: 1px solid #cfd4d8;
+    margin-top: 10px;
+    }
+    /*NEW MESSAGE STYLING*/

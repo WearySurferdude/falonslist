@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- TITLE -->
+    <title>Falon's List</title>
+    <!-- STYLESHEET -->
+    <link rel="stylesheet" href="style.css" />
+    <!-- SCRIPT -->
+    <script defer src="app.js"></script>
+    <!-- JQUERY -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    <!-- FONT FROM GOOGLE -->
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@100;200;400&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!-- HEADER WITH LOGO AND TIME -->
+    <header>
+        <div class="header">
+            <!-- WEBSITE LOGO -->
+            <img src="https://www.freelogodesign.org/file/app/client/thumb/fce17c5b-c4b0-4f40-9de7-046b248fa073_200x200.png?1593438110646"
+                width="200px"><br>
+            <!-- DATE/TIME BENEATH LOGO -->
+            <span id="datetime"></span>
+
+            <!-- USERNAME SPAN -->
+            <span id="userID"></span>
+
+            <!-- LOG IN FORM -->
+            <footer id="login">
+                <form>
+                    <!-- USERNAME TEXT INPUT -->
+                    <input class="searchBox" type="text" placeholder="search posts..." /><button id="search"
+                        type="submit">s e a r c h</button>
+                    <label for="uname"><b>Username</b></label>
+                    <input type="text" id="uname" placeholder="Enter Username" name="username" required>
+                    <!-- PASSWORD TEXT INPUT ** #psw -->
+                    <label for="psw"><b>Password</b></label>
+                    <input type="password" id="psw" placeholder="Enter Password" name="password" required>
+                    <!-- LOG IN BUTTON -->
+                    <button id="loginbutton" type="submit">l o g i n</button>
+                    <button id="registerbutton" type="submit">r e g i s t e r</button>
+                </form>
+            </footer>
+            <!-- END OF LOG IN FORM -->
+
+            <hr> <!-- LINE TO SPLIT PAGE -->
+        </div>
+    </header>
+    <!-- HEADER ENDS HERE -->
+
+    <!-- POSTS WILL RENDER HERE -->
+    <main>
+        <div id="postsdiv">
+            <div id="renderposts">
+            </div>
+        </div>
+    </main>
+    <!-- END OF RENDER POSTS -->
+
+    <!-- LOG OUT BUTTON STARTS HERE -->
+    <div id="logoutbutton">
+        <button class='logout'>LOG OUT</button>
+        <button class='messages'>MESSAGES</button>
+    </div>
+    <!-- LOG OUT BUTTON ENDS HERE -->
+
+    <!-- RIGHT DRAWER EFFECT WITH NEW POST FORM -->
+    <aside class="right-drawer">
+        <div id="postdivs">
+            <h1>CREATE NEW POST</h1>
+            <form id="newpostform">
+                <!-- AUTHOR LABEL/TEXT INPUT  ** #author -->
+                <label for="title">Title:</label>
+                <input type="text" id="title" name="title">
+                <br><br>
+                <!-- DESCRIPTION LABEL/TEXT INPUT ** #description -->
+                <label for="description">Description:</label>
+                <input type="text" id="description" name="description">
+                <br><br>
+                <!-- LOCATION LABEL/TEXT INPUT ** #location -->
+                <label for="location">Location:</label>
+                <input type="text" id="location" name="location">
+                <br><br>
+                <!-- PRICE LABEL/TEXT INPUT ** #price -->
+                <label for="price">Price:</label>
+                <input type="text" id="price" name="price">
+                <br><br>
+                <!-- DELIVERY LABEL/TEXT INPUT - RADIO ** #yesRadio/#noRadio -->
+                <label for="delivery" id="deliverylabel">Offer Delivery?</label>
+                <br>
+                <label for="yes" id="yes">Yes</label>
+                <input value="yes" type="Radio" id="yesRadio" name="delivery">
+                <label for="no" id="no">No</label>
+                <input value="no" type="Radio" id="noRadio" name="delivery">
+                <br><br>
+                <!-- SUBMIT BUTTON FOR NEW POST FORM -->
+                <button id="submitbutton" type="submit">s u b m i t </button>
+            </form>
+        </div>
+    </aside>
+    <!-- END OF NEW POST FORM -->
+
+
+    <!-- CREATE NEW POST STARTS HERE -->
+    <div class='modal'>
+        <div class='sign-up-content'>
+            <h3>Sign Up</h3>
+            <form class='newuser'>
+                <label for='newusername'>Username:</label>
+                <input type='text' id='newusername' required>
+                <h6>Username is Required*</h6>
+                <label for='newpassword'>Password:</label>
+                <input type='text' id='newpassword' required>
+                <h6>Password is Required*</h6>
+                <input type='text' id='verifypassword' required>
+                <h6>Verify Password *</h6>
+                <div class='actionbuttons'>
+                    <button class='submituser'>s u b m i t</button>
+                    <button class='canceluser'>c a n c e l</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <!-- CREATE NEW POST END HERE -->
+
+    <!-- MESSAGES MODAL -->
+    <div class='messagesmodal'>
+        <div class='messagesdiv'>
+            <h3>M E S S A G E S</h3>
+            <div id="messages">
+            </div>
+            <button class='closemessages'>c l o s e</button>
+            </form>
+        </div>
+    </div>
+    <!-- MESSAGES MODAL END HERE -->
+
+    <!-- NEW MESSAGES MODAL -->
+    <div class='newmessagesmodal'>
+        <div class='newmessagesdiv'>
+            <h3>M E S S A G E</h3>
+            <form action='index.php' method='post' class='newmessage'>
+                <label for="messagetouser">Message:</label><br>
+                <input type="text" id="newmessage" name="newmessage"><br>
+                <button class='submitmessage'>s u b m i t</button>
+                <button class='closemessages'>c l o s e</button>
+            </form>
+        </div>
+    </div>
+    <!-- MESSAGES MODAL END HERE -->
+</body>
+
+</html>
